@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Users</title>
+  </head>
+  <body>
+    <a href="/login">Login</a>
+    <a href="/register">Register</a>
+    <a href="/show">Show</a>
+    <a href="/delete">Delete</a>
+    <a href="/authenticated">Authenticade Page</a>
+
+    <% for (i = 0; i < user.length; i++) {%>
+    <div class="each_user">
+      <p class="little_style">User <%= i +1 %></p>
+      <p>Username: <%= user[i].username %></p>
+      <p>Password: <%= user[i].password %></p>
+    </div>
+    <% } %>
+  </body>
+</html>
