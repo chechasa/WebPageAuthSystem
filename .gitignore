@@ -1,1 +1,3 @@
 .env
+.id_rsa_priv.pem
+.id_rsa_priv
